@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 0px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  padding: 25px;
+  overflow-y: auto;
+  min-width: 0;
+}

@@ -1,0 +1,84 @@
+.categorySection {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.grid {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 10px;
+ gap: 16px;
+}
+
+
+
+
+.card {
+    width: 90px;
+    height: 90px;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  border: 1px solid #f3f3f3;
+  
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.07);
+  border-color: #ffe4cf;
+}
+
+
+
+.iconWrapper {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 8px auto;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff6ed, #ffe7d2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s ease;
+}
+
+.card:hover .iconWrapper {
+  transform: scale(1.1);
+  background: linear-gradient(145deg, #ffe7d2, #ffd2ad);
+}
+
+
+
+.iconWrapper img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #201f1f;
+  transition: 0.3s ease;
+}
+
+.card:hover .label {
+  color: #ff7a00;
+}

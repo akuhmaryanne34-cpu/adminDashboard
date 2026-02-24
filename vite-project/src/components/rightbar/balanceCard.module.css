@@ -1,0 +1,39 @@
+.wrapper h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.card {
+  background: linear-gradient(135deg, #ff8c42, #ff6b00);
+  padding: 20px;
+  border-radius: 18px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card p {
+  font-size: 13px;
+   font-family: "Arimo", sans-serif;
+  opacity: 0.8;
+}
+
+.card h2 {
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}

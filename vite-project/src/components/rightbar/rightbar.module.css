@@ -1,0 +1,10 @@
+.rightbar {
+  background: linear-gradient(180deg, #fff3e8 0%, #fbfbfb 100%);
+  height: 100vh;
+  padding: 25px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-left: 1px solid #eee;
+}

@@ -8,7 +8,7 @@ import History from "./History";
 import Bills from "./Bills";
 import Settings from "./Settings";
 
-const Main = ({ activeView, addToCart }) => {
+const Main = ({ activeView, addToCart, setShowSidebar }) => {
   const renderView = {
     Dashboard: <Dashboard addToCart={addToCart} />,
     Order: <Order />,
@@ -21,7 +21,8 @@ const Main = ({ activeView, addToCart }) => {
 
   return (
     <div className={styles.mainContainer}>
-      <Header />
+      {/* 🔥 PASS IT HERE */}
+      <Header setShowSidebar={setShowSidebar} />
 
       <div className={styles.content}>
         {renderView[activeView] || <Dashboard addToCart={addToCart} />}

@@ -16,4 +16,7 @@
   padding: 25px;
   overflow-y: auto;
   min-width: 0;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
 }

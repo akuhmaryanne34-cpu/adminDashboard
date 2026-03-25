@@ -1,0 +1,112 @@
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* FORM WRAPPER */
+.form {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 20px;
+  padding: 20px;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  font-family: "Roboto", sans-serif;
+}
+
+/* INPUT FIELDS */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.field label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+.field input {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* INPUT FOCUS */
+.field input:focus {
+  outline: none;
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 2px rgba(255, 122, 0, 0.1);
+}
+
+/* TOGGLE */
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.save {
+  width: 100%;
+  padding: 12px;
+
+  background: linear-gradient(135deg, #ff7a00, #ffb347);
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.save:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #e86c00, #ffa534);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .form {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .field input {
+    padding: 10px;
+  }
+
+  .save {
+    padding: 10px;
+  }
+}
+
+/* 📱 SMALL MOBILE */
+@media (max-width: 480px) {
+  .form {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .toggle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

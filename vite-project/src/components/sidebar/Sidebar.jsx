@@ -10,7 +10,12 @@ import {
   Setting2,
 } from "iconsax-react";
 
-const Sidebar = ({ activeView, setActiveView }) => {
+const Sidebar = ({
+  activeView,
+  setActiveView,
+  showSidebar,
+  setShowSidebar,
+}) => {
   const menuItems = [
     { name: "Dashboard", label: "Dashboard", icon: Home },
     { name: "Order", label: "Food Order", icon: ShoppingCart },
@@ -22,7 +27,7 @@ const Sidebar = ({ activeView, setActiveView }) => {
   ];
 
   return (
-    <div className={styles.sidebar}>
+    <div className={`${styles.sidebar} ${showSidebar ? styles.open : ""}`}>
       <h1 className={styles.logo}>GoMeal.</h1>
 
       <div className={styles.nav}>
@@ -33,22 +38,16 @@ const Sidebar = ({ activeView, setActiveView }) => {
           return (
             <div
               key={item.name}
-              onClick={() => setActiveView(item.name)}
+              onClick={() => {
+                setActiveView(item.name);
+                setShowSidebar(false); // 👈 CLOSE AFTER CLICK
+              }}
               className={
-                isActive
-                  ? `${styles.navItem} ${styles.active}`
-                  : styles.navItem
+                isActive ? `${styles.navItem} ${styles.active}` : styles.navItem
               }
             >
-              <div
-                className={
-                  isActive ? styles.iconActive : styles.icon
-                }
-              >
-                <Icon
-                  size="18"
-                  variant={isActive ? "Bold" : "Linear"}
-                />
+              <div className={isActive ? styles.iconActive : styles.icon}>
+                <Icon size="18" variant={isActive ? "Bold" : "Linear"} />
               </div>
 
               <span>{item.label}</span>

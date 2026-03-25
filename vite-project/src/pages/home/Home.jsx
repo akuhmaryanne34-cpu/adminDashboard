@@ -6,13 +6,13 @@ import Main from "../../components/main/Main";
 import Rightbar from "../../components/rightbar/Rightbar";
 
 const Home = () => {
-  // Active page (Dashboard, Favorites, etc.)
   const [activeView, setActiveView] = useState("Dashboard");
 
-  // Cart state (GLOBAL for this page)
   const [cart, setCart] = useState([]);
 
-  // Add to cart function
+  // 🔥 NEW: sidebar toggle
+  const [showSidebar, setShowSidebar] = useState(false);
+
   const addToCart = (dish) => {
     setCart((prevCart) => [...prevCart, dish]);
   };
@@ -20,13 +20,32 @@ const Home = () => {
   const removeFromCart = (indexToRemove) => {
     setCart((prev) => prev.filter((_, index) => index !== indexToRemove));
   };
+
   return (
     <div className={styles.wrapper}>
-      <Sidebar activeView={activeView} setActiveView={setActiveView} />
+      {/* 🔥 SIDEBAR */}
+      <Sidebar
+        activeView={activeView}
+        setActiveView={setActiveView}
+        showSidebar={showSidebar}
+        setShowSidebar={setShowSidebar}
+      />
 
-      <Main activeView={activeView} addToCart={addToCart} />
+      {/* 🔥 OVERLAY */}
+      {showSidebar && (
+        <div className={styles.overlay} onClick={() => setShowSidebar(false)} />
+      )}
 
-      <Rightbar cart={cart} removeFromCart={removeFromCart} />
+      {/* MAIN CONTENT */}
+      <div className={styles.content}>
+        <Main
+          activeView={activeView}
+          addToCart={addToCart}
+          setShowSidebar={setShowSidebar} // 👈 pass this
+        />
+
+        <Rightbar cart={cart} removeFromCart={removeFromCart} />
+      </div>
     </div>
   );
 };

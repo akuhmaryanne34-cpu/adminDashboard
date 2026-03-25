@@ -1,0 +1,65 @@
+.container {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+}
+
+.header {
+  display: flex;
+    font-family: "Arimo",sans-serif;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 6px 12px;
+  font-family: "Arimo",sans-serif;
+  border: none;
+  background: #f3f3f3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+    font-family: "Arimo",sans-serif;
+  padding: 12px;
+  color: #777;
+}
+
+.table td {
+  padding: 12px;
+    font-family: "Arimo",sans-serif;
+  border-top: 1px solid #eee;
+}
+
+/* STATUS BADGES */
+.status {
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+.completed {
+  background: #e6f7ed;
+    font-family: "Arimo",sans-serif;
+  color: #22c55e;
+}
+
+.pending {
+  background: #fff4e5;
+    font-family: "Arimo",sans-serif;
+  color: #f59e0b;
+}
+
+.cancelled {
+      font-family: "Arimo",sans-serif;
+  background: #ffe5e5;
+  color: #ef4444;
+}

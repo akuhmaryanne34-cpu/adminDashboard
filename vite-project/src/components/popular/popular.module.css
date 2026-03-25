@@ -56,3 +56,66 @@
   font-size: 18px;
   cursor: pointer;
 }
+
+/* 📱 TABLET */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+  .card img {
+    width: 90px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .card img {
+    width: 80px;
+  }
+
+  .card h4 {
+    font-size: 13px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .card button {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+}
+
+/* 📱 SMALL MOBILE */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* clean 2-column layout */
+  }
+
+  .card img {
+    width: 70px;
+  }
+
+  .card {
+    border-radius: 12px;
+  }
+}

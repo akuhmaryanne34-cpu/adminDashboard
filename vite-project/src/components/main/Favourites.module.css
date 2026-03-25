@@ -1,0 +1,132 @@
+.container {
+  padding: 20px;
+}
+
+/* TITLE */
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* EMPTY STATE */
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+ grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE WRAPPER */
+.imageWrapper {
+  width: 100%;
+  height: 140px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+/* IMAGE */
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.content {
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: #ff7a00; /* brand color */
+  font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ACTION BUTTONS */
+.actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+/* ADD BUTTON */
+.add {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #ff7a00;
+  color: white;
+  border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.add:hover {
+  background: #e86c00;
+}
+
+/* REMOVE BUTTON */
+.remove {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #f1f1f1;
+  color: #555;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.remove:hover {
+  background: #e5e5e5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .imageWrapper {
+    height: 120px;
+  }
+}

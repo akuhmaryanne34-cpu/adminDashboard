@@ -1,4 +1,4 @@
-import styles from "./addressCard.module.css";
+import styles from "./AddressCard.module.css";
 import { Location } from "iconsax-react";
 
 const AddressCard = () => {

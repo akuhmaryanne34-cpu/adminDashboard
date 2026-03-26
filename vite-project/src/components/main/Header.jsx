@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 import { SearchNormal1, Menu } from "iconsax-react";
 
 const Header = ({ setShowSidebar }) => {

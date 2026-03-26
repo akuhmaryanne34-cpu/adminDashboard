@@ -1,4 +1,4 @@
-import styles from "./orderMenu.module.css";
+import styles from "./OrderMenu.module.css";
 import pizza from "../../assets/icons/pizza-slice.png";
 import burger from "../../assets/icons/burger.png";
 

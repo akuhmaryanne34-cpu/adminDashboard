@@ -1,4 +1,4 @@
-import styles from "./popular.module.css";
+import styles from "./Popular.module.css";
 
 const PopularCard = ({ dish, addToCart }) => {
   return (

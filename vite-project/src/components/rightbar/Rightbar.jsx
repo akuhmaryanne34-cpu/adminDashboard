@@ -1,4 +1,4 @@
-import styles from "./rightbar.module.css";
+import styles from "./Rightbar.module.css";
 import RightbarHeader from "./RightbarHeader";
 import BalanceCard from "./BalanceCard";
 import AddressCard from "./AddressCard";

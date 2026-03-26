@@ -1,4 +1,4 @@
-import styles from "./main.module.css";
+import styles from "./Main.module.css";
 import Header from "./Header";
 import Dashboard from "./Dashboard";
 import Order from "./Order";

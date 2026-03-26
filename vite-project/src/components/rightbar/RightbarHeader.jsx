@@ -1,4 +1,4 @@
-import styles from "./rightbarHeader.module.css";
+import styles from "./RightbarHeader.module.css";
 import { MessageText1, Notification, Setting2 } from "iconsax-react";
 import profile from "../../assets/icons/burger.png";
 

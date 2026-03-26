@@ -1,4 +1,4 @@
-import styles from "./balanceCard.module.css";
+import styles from "./BalanceCard.module.css";
 
 const BalanceCard = () => {
   return (

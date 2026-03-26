@@ -1,4 +1,4 @@
-import styles from "./popularDishes.module.css";
+import styles from "./PopularDishes.module.css";
 import dishes from "../../data/dishes";
 import DishCard from "./DishCard";
 

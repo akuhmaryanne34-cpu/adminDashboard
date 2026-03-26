@@ -1,4 +1,4 @@
-import styles from "./history.module.css";
+import styles from "./History.module.css";
 
 const orders = [
   {

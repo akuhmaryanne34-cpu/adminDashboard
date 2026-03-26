@@ -1,4 +1,4 @@
-import styles from "./dishCard.module.css";
+import styles from "./DishCard.module.css";
 
 function DishCard({ dish }) {
   return (

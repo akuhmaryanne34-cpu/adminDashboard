@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./favourites.module.css";
+import styles from "./Favourites.module.css";
 import dishes from "../../data/dishes"; // adjust path if needed
 
 const Favourites = () => {

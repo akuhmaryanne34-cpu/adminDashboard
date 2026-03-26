@@ -1,0 +1,146 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+.wrapper h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.wrapper p {
+  font-size: 14px;
+  color: #888;
+   font-family: "Arimo", sans-serif;
+}
+
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
+.item p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+   font-family: "Arimo", sans-serif;
+}
+
+
+.item span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff7a00;
+   font-family: "Arimo", sans-serif;
+}
+
+
+.total {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 2px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.total strong {
+  font-size: 16px;
+  color: #222;
+   font-family: "Roboto", sans-serif;
+}
+
+.removeBtn {
+  background: #ffe5e5;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #ff4d4d;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.removeBtn:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+/* 📱 TABLET */
+@media (max-width: 1024px) {
+  .wrapper h3 {
+    font-size: 16px;
+  }
+
+  .wrapper p,
+  .item p,
+  .item span {
+    font-size: 13px;
+  }
+
+  .total strong {
+    font-size: 15px;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .wrapper {
+    gap: 14px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .item span {
+    align-self: flex-end; /* keeps price aligned right */
+  }
+
+  .total {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .wrapper h3 {
+    font-size: 15px;
+  }
+}
+
+/* 📱 SMALL MOBILE */
+@media (max-width: 480px) {
+  .wrapper h3 {
+    font-size: 14px;
+  }
+
+  .wrapper p,
+  .item p,
+  .item span {
+    font-size: 12px;
+  }
+
+  .total strong {
+    font-size: 14px;
+  }
+
+  .removeBtn {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+  }
+}

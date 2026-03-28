@@ -1,4 +1,4 @@
-import styles from "./popular.module.css";
+import styles from "./Popular.module.css";
 import PopularCard from "./PopularCard";
 import fishBurger from "../../assets/images/fishBurger.jpg";
 import beefBurger from "../../assets/images/beefBurger.jpg";
